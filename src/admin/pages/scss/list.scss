@@ -1,0 +1,10 @@
+@use "../../variables" as v;
+
+.list {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  .listContainer {
+    height: 100vh;
+    overflow: auto;
+  }
+}
