@@ -2,11 +2,11 @@ import React from "react";
 import "./scss/navbar.scss";
 import SearchIcon from "@mui/icons-material/Search";
 import LanguageIcon from "@mui/icons-material/Language";
-import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
-import FullscreenExitOutlinedIcon from "@mui/icons-material/FullscreenExitOutlined";
-import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
-import ChatBubbleOutlineOutlinedIcon from "@mui/icons-material/ChatBubbleOutlineOutlined";
-import FormatListBulletedOutlinedIcon from "@mui/icons-material/FormatListBulletedOutlined";
+// import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
+// import FullscreenExitOutlinedIcon from "@mui/icons-material/FullscreenExitOutlined";
+// import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
+// import ChatBubbleOutlineOutlinedIcon from "@mui/icons-material/ChatBubbleOutlineOutlined";
+// import FormatListBulletedOutlinedIcon from "@mui/icons-material/FormatListBulletedOutlined";
 
 const Navbar = () => {
   return (

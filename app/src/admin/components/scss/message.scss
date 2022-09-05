@@ -1,0 +1,43 @@
+.MsgContainer {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.541);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  i.delete {
+    color: crimson;
+    font-size: 20px;
+  }
+  .msg {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white;
+    border-radius: 20px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 50px;
+    .btn {
+      button {
+        padding: 5px 25px;
+        margin-left: 10px;
+        border-radius: 10px;
+        border: none;
+        color: white;
+        cursor: pointer;
+      }
+      .delete {
+        background-color: crimson;
+      }
+      .cancel {
+        background-color: lightgreen;
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.categories {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  .categoriesContainer {
+    height: 100vh;
+    overflow-y: auto;
+  }
+}

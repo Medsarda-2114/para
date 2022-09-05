@@ -1,20 +1,25 @@
 import React, { useState, useEffect } from "react";
 import "./scss/datatable.scss";
-import { userColumns, productColumns, userRows } from "../datatablesource.js";
+import {
+  userColumns,
+  productColumns,
+  userRows,
+  categorieColumns,
+} from "../datatablesource.js";
 import { DataGrid } from "@mui/x-data-grid";
 import { Link } from "react-router-dom";
-// import { collection, deleteDoc, doc, getDocs } from "firebase/firestore";
-// import { db } from "../firebase";
 // import { toast } from "react-toastify";
 
 const Datatable = ({ type }) => {
-  const [data, setData] = useState([]);
+  // const [data, setData] = useState([]);
   const [columns, setColumns] = useState([]);
   useEffect(() => {
     if (type === "users") {
       setColumns(userColumns);
-    } else if (type === "products") {
+    } else if (type === "orders") {
       setColumns(productColumns);
+    } else if (type === "categorie") {
+      setColumns(categorieColumns);
     }
   }, [type]);
   // useEffect(() => {
@@ -100,7 +105,7 @@ const Datatable = ({ type }) => {
         columns={columns.concat(actionColumn)}
         pageSize={10}
         rowsPerPageOptions={[10]}
-        checkboxSelection
+        // checkboxSelection
       />
     </div>
   );

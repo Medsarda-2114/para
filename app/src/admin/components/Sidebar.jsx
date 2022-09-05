@@ -20,7 +20,6 @@ const Sidebar = () => {
   );
   useEffect(() => {
     setCurrentNav(window.location.href.split("/")[3]);
-    console.log(currentNav);
   }, [window.location.href.split("/")[3]]);
 
   return (
@@ -91,18 +90,20 @@ const Sidebar = () => {
               <span>Orders</span>
             </li>
           </Link>
-          <Link to="/Delivery" style={{ textDecoration: "none" }}>
+          <Link to="/categories" style={{ textDecoration: "none" }}>
             <li
               onClick={() => {
                 setCurrentNav(window.location.href.split("/")[3]);
               }}
               style={{
                 backgroundColor:
-                  currentNav === "Delivery" ? "rgba(153, 153, 153, 0.274)" : "",
+                  currentNav === "categories"
+                    ? "rgba(153, 153, 153, 0.274)"
+                    : "",
               }}
             >
               <LocalShippingIcon className="icon" />
-              <span>Delivery</span>
+              <span>Categories</span>
             </li>
           </Link>
           <p className="title">USEFUL</p>

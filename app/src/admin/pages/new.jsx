@@ -3,7 +3,7 @@ import "./scss/new.scss";
 import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
 import DriveFolderUploadIcon from "@mui/icons-material/DriveFolderUpload";
-import CameraAltOutlinedIcon from "@mui/icons-material/CameraAltOutlined";
+// import CameraAltOutlinedIcon from "@mui/icons-material/CameraAltOutlined";
 
 const New = ({ inputs, title, type }) => {
   const [file, setFile] = useState("");

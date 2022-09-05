@@ -118,7 +118,7 @@ const List = ({ id }) => {
         },
       ]);
     }
-  }, []);
+  }, [id]);
   return (
     <TableContainer component={Paper} className="table">
       <Table sx={{ minWidth: 650 }} aria-label="simple table">

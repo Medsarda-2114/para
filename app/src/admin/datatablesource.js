@@ -42,11 +42,49 @@ export const productColumns = [
   {
     field: "user",
     headerName: "User",
-    width: 230,
+    width: 130,
     renderCell: (params) => {
       return (
         <div className="cellWithImg">
-          <img className="cellImg" src={params.row.img} alt="avatar" />
+          {/* <img className="cellImg" src={params.row.img} alt="avatar" /> */}
+          {params.row.username}
+        </div>
+      );
+    },
+  },
+  {
+    field: "img",
+    headerName: "Product Name",
+    width: 250,
+  },
+  {
+    field: "age",
+    headerName: "Order Time",
+    width: 100,
+  },
+  {
+    field: "status",
+    headerName: "status",
+    width: 100,
+    renderCell: (params) => {
+      return (
+        <div className={`cellWithStatus ${params.row.status}`}>
+          {params.row.status}
+        </div>
+      );
+    },
+  },
+];
+export const categorieColumns = [
+  { field: "id", headerName: "ID", width: 70 },
+  {
+    field: "user",
+    headerName: "Categorie",
+    width: 130,
+    renderCell: (params) => {
+      return (
+        <div className="cellWithImg">
+          {/* <img className="cellImg" src={params.row.img} alt="avatar" /> */}
           {params.row.username}
         </div>
       );
@@ -54,12 +92,12 @@ export const productColumns = [
   },
   {
     field: "age",
-    headerName: "age",
-    width: 200,
+    headerName: "Products Number",
+    width: 250,
   },
   {
-    field: "country",
-    headerName: "country",
+    field: "age",
+    headerName: "Orders",
     width: 100,
     renderCell: (params) => {
       return (
