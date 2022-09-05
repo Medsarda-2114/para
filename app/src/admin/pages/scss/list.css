@@ -1,0 +1,8 @@
+.list {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+.list .listContainer {
+  height: 100vh;
+  overflow: auto;
+}/*# sourceMappingURL=list.css.map */

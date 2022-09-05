@@ -1,0 +1,108 @@
+.navBar {
+  height: 50px;
+  border-bottom: 1px solid rgb(230, 230, 230);
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 50px;
+  align-items: center;
+  font-size: 14px;
+}
+.navBar .left .search {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border: 0.5px solid rgb(230, 230, 230);
+  border-radius: 20px;
+}
+.navBar .left .search input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.navBar .left .search input::-moz-placeholder {
+  font-size: 12px;
+}
+.navBar .left .search input:-ms-input-placeholder {
+  font-size: 12px;
+}
+.navBar .left .search input::placeholder {
+  font-size: 12px;
+}
+.navBar .right .items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.navBar .right .items .item {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  position: relative;
+}
+.navBar .right .items .item .icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+.navBar .right .items .item .avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.navBar .right .items .item .counter {
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+}
+
+@media (max-width: 900px) {
+  .navBar {
+    height: 50px;
+    border-bottom: 1px solid rgb(230, 230, 230);
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 50px;
+    align-items: center;
+    font-size: 14px;
+  }
+  .navBar .left .search {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border: 0.5px solid rgb(230, 230, 230);
+    border-radius: 20px;
+  }
+  .navBar .left .search input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  .navBar .left .search input::-moz-placeholder {
+    font-size: 12px;
+  }
+  .navBar .left .search input:-ms-input-placeholder {
+    font-size: 12px;
+  }
+  .navBar .left .search input::placeholder {
+    font-size: 12px;
+  }
+  .navBar .right .items .item.language {
+    display: none;
+  }
+  .navBar .right .items .item .icon {
+    display: none;
+  }
+  .navBar .right .items .item .counter {
+    display: none;
+  }
+}/*# sourceMappingURL=navbar.css.map */
